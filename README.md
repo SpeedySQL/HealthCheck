@@ -3,7 +3,7 @@ SQL Server Performance Health Check
 
 Usage
 -----
-1.	Download Health Check folder to the desired location.
+1.	Download the ZIP file and copy the "HealthCheck" subdirectory to the desired location.
 2.	Open DBList.txt and replace server and database names as required. 
 
 For example:  
