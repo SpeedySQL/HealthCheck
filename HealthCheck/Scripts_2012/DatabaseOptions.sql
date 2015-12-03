@@ -5,7 +5,7 @@
 	Comments:	Returns database options that are enabled as well as
 				some other information such as compatibility level
 				and recovery model.
-	Revisions:											 
+	Revisions:	02/12/15 - Added collate catalog_default.									 
 ********************************************************************/
 
 SET NOCOUNT ON;
@@ -143,7 +143,7 @@ WHERE DB_Option IS NOT NULL
 UNION ALL
 
 SELECT 
-	DB_Option 
+	DB_Option collate catalog_default
 FROM DB_Options2
 WHERE DB_Option IS NOT NULL
 
